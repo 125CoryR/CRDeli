@@ -1,0 +1,23 @@
+body{
+    background-color: indigo;
+
+    margin: 0;
+}
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    min-height: 127px;
+    background-size: 500px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+ background-image: url("./images/drippingBorder.png");
+}
+#title{
+    text-align: center;
+}
+#titleDiv
+{
+margin-top: 200px;
+}
