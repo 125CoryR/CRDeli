@@ -1,7 +1,10 @@
 body{
     background-color: indigo;
-
+    font-family: "Pirata One";
     margin: 0;
+}
+button{
+    font-family: "Pirata One";
 }
 #menuBar{
     margin: 0px;
@@ -20,4 +23,18 @@ body{
 #titleDiv
 {
 margin-top: 200px;
+}
+h1{
+    font-size: 5vw;
+}
+h3{
+    font-size: 2vw;
+}
+
+
+#selections{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
 }
