@@ -5,6 +5,10 @@ body{
 }
 button{
     font-family: "Pirata One";
+    border-radius: 5%;
+}
+imgs{
+
 }
 #menuBar{
     margin: 0px;
@@ -16,6 +20,16 @@ button{
     left: 0px;
     width: 100%;
  background-image: url("./images/drippingBorder.png");
+}
+#cartDiv{
+    margin-left: 66.6%;
+    display: flex;
+    justify-content: end;
+}
+#cartButton{
+    border: none;
+    background: none;
+
 }
 #title{
     text-align: center;
@@ -29,6 +43,8 @@ h1{
 }
 h3{
     font-size: 2vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 

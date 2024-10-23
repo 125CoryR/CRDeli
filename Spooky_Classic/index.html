@@ -5,9 +5,54 @@
     <title>Spooky Sandwiches</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 
 </head>
 <body>
+<div id = "menuBar" >
 
+    <div id="buttonBar" >
+        <div id = "cartDiv">
+            <button id = "cartButton"><img src="../images/bagIcon.png" height="40" width="40"/></button>
+        </div>
+    </div>
+</div>
+
+<div id = "parentDiv">
+    <div id = "itemDisplay">
+        <img src="../images/spookySandwich.jpg" height="400" width="400"/>
+            <h1>Spooky Classic</h1>
+    </div>
+    <div id = "toppingsDiv">
+    <div id = "breadDiv">
+        <h2>Bread</h2>
+        <div id = "breadButtonDiv">
+            <div>
+                <input type="radio" name="bread" id="white"
+                       value="white" checked>
+                <label for="white"> White </label>
+            </div>
+            <div>
+                <input type="radio" name="bread" id="Ciabatta"
+                       value="white" >
+                <label for="white"> Ciabatta </label>
+            </div>
+            <div>
+                <input type="radio" name="bread" id="WholeWheat"
+                       value="WholeWheat" >
+                <label for="white"> Whole Wheat </label>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+</div>
 </body>
 </html>

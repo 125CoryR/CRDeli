@@ -1,0 +1,60 @@
+body{
+    background-color: indigo;
+    font-family: "Pirata One";
+    margin: 0;
+}
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    min-height: 127px;
+    background-size: 500px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-image: url("../images/drippingBorder.png");
+}
+#cartDiv{
+    margin-left: 66.6%;
+    display: flex;
+    justify-content: end;
+}
+#cartButton{
+    border: none;
+    background: none;
+
+}
+#parentDiv{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+#itemDisplay{
+    margin-left: 2.5%;
+    width: 30%;
+}
+h1{
+    margin-top: 0px;
+    font-size: 5vw;
+    text-align: center;
+}
+#toppingsDiv{
+    width: 30%;
+    text-align: center;
+}
+#breadButtonDiv{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    font-size: 3vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+label{
+    font-size: 2vw;
+}

@@ -12,14 +12,23 @@
 <body>
  <div id = "menuBar" >
 
+     <div id="buttonBar" >
+         <div id = "cartDiv">
+             <button id = "cartButton"><img src="images/bagIcon.png" height="40" width="40"/></button>
+
+         </div>
+
+     </div>
+
  </div>
+
  <div id="titleDiv">
     <h1 id = "title">The Spooky Sandwich Shop!</h1>
  </div>
 
  <div id="selections" >
-     <div id="Spooky_Classic" class = "selectionDiv">
-        <button id="sClassicButton" class = "buttons">
+     <div id="Spooky_Classic" class = "selectionDiv" >
+        <button id="sClassicButton" class = "buttons" onclick="ClassicPage()">
 
             <img src="images/spookySandwich.jpg" class = "buttonImages" height="256" width="256"/>
 
@@ -30,7 +39,7 @@
 
      </div>
      <div id="Spooky_Club" class = "selectionDiv">
-         <button id="sClubButton" class = "buttons">
+         <button id="sClubButton" class = "buttons" onclick = "ClubPage()">
 
 
              <img src="images/ClubSandwich.jpg" class = "buttonImages"  height="256" width="256"/>
@@ -41,7 +50,7 @@
 
      </div>
      <div id="Spooky_Veg" class = "selectionDiv">
-         <button id="sVegButton" class = "buttons">
+         <button id="sVegButton" class = "buttons" onclick="VegPage()">
 
 
              <img src="images/SpookyVeg.jpg" class = "buttonImages" height="256" width="256"/>
