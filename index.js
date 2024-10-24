@@ -7,5 +7,23 @@ function ClubPage(){
 function VegPage(){
     window.location.href = "Spooky_Veg";
 }
+function OpenCartTab(){
 
+   var cartTab = document.getElementById("cartDiv");
+
+   if(cartTab.style.display === "none"){
+       document.getElementById("mainDiv").style.width = "80%";
+       cartTab.style.display = "flex";
+
+   }
+   else{
+       cartTab.style.display = "none";
+       document.getElementById("mainDiv").style.width = "100%";
+   }
+
+
+
+
+
+}
 

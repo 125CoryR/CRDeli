@@ -2,14 +2,13 @@ body{
     background-color: indigo;
     font-family: "Pirata One";
     margin: 0;
+    display: flex;
 }
 button{
     font-family: "Pirata One";
     border-radius: 5%;
 }
-imgs{
 
-}
 #menuBar{
     margin: 0px;
     padding: 0px;
@@ -20,8 +19,9 @@ imgs{
     left: 0px;
     width: 100%;
  background-image: url("./images/drippingBorder.png");
+    z-index: max(100, 100);
 }
-#cartDiv{
+#cartButtonDiv{
     margin-left: 66.6%;
     display: flex;
     justify-content: end;
@@ -53,4 +53,60 @@ h3{
     justify-content: space-around;
     margin-left: 20%;
     margin-right: 20%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+#cartDiv{
+    display: none;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 80%;
+    width: 20%;
+    height: 100vh;
+
+    position: fixed;
+    background-color: ivory;
+    border-radius: 2%;
+    padding-top:  150px;
+
+}
+#checkoutButtonsDiv{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+
+    border-top: 2px solid dimgrey;
+}
+#clearCartButton{
+ background-color: lightcoral;
+}
+.checkoutButtons{
+    margin-top: 5%;
+    font-size: 1.5vw;
+    border: none;
+
+    height: 6vh;
+}
+#itemAndCostDiv{
+    display: flex;
+    justify-content: space-around;
+    height:5vh;
+    font-size: 2vw;
+}
+#checkoutParent{
+    top: 85vh;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    background-color: lightgrey;
+}
+.itemsAndPrice{
+    margin-top: 0;
+    display: block;
 }
