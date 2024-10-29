@@ -13,45 +13,84 @@
 <body>
 <div id = "menuBar" >
 
-    <div id="buttonBar" >
-        <div id = "cartDiv">
-            <button id = "cartButton"><img src="../images/bagIcon.png" height="40" width="40"/></button>
-        </div>
-    </div>
 </div>
 
-<div id = "parentDiv">
+<div id = "mainDiv">
     <div id = "itemDisplay">
         <img src="../images/spookySandwich.jpg" height="400" width="400"/>
             <h1>Spooky Classic</h1>
     </div>
     <div id = "toppingsDiv">
-    <div id = "breadDiv">
-        <h2>Bread</h2>
-        <div id = "breadButtonDiv">
-            <div>
-                <input type="radio" name="bread" id="white"
-                       value="white" checked>
-                <label for="white"> White </label>
+        <div id = "sizediv" class= "toppingClass">
+            <h2>Choose A Size</h2>
+            <div id = "sizeButtonDiv">
+                <div>
+                    <input type="radio" name="size" id="Mini"
+                           value="Mini" checked>
+                    <label for="Mini"> Mini </label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="Regular"
+                           value="Regular" >
+                    <label for="Regular"> Regular </label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="Large"
+                           value="Large" >
+                    <label for="Large"> Large </label>
+                </div>
             </div>
-            <div>
-                <input type="radio" name="bread" id="Ciabatta"
-                       value="white" >
-                <label for="white"> Ciabatta </label>
+         </div>
+        <div id = "breadDiv" class= "toppingClass">
+            <h2>Choose your Bread</h2>
+            <div id = "breadButtonDiv">
+                <div>
+                    <input type="radio" name="bread" id="White"
+                           value="White" checked>
+                    <label for="White"> White </label>
+                </div>
+                <div>
+                    <input type="radio" name="bread" id="Ciabatta"
+                           value="Ciabatta" >
+                    <label for="Ciabatta"> Ciabatta </label>
+                </div>
+                <div>
+                    <input type="radio" name="bread" id="WholeWheat"
+                           value="WholeWheat" >
+                    <label for="WholeWheat"> Whole Wheat </label>
+                </div>
             </div>
-            <div>
-                <input type="radio" name="bread" id="WholeWheat"
-                       value="WholeWheat" >
-                <label for="white"> Whole Wheat </label>
-            </div>
+        </div>
+
+        <div id ="orderButtonDiv">
+        <button id = "orderButton" onclick = "Order()">Add to Order</button>
+        </div>
+    </div>
+
+</div>
+<div id = "cartDiv">
+    <div id = "itemsDiv">
+        f
+
+
+    </div>
+
+    <div id = "checkoutParent">
+        <div id = "itemAndCostDiv">
+            <p id="items" class="itemsAndPrice"> Items: 0</p>
+
+            <p id ="price" class="itemsAndPrice">Total: $0.00</p>
+        </div>
+        <div id = "checkoutButtonsDiv">
+
+            <button id= "clearCartButton" class = "checkoutButtons">Clear Cart</button>
+            <Button id="checkoutButton" class = "checkoutButtons"> Checkout </Button>
 
 
         </div>
-
-
     </div>
 
-    </div>
+
 
 </div>
 </body>
