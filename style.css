@@ -2,13 +2,15 @@ body{
     background-color: indigo;
     font-family: "Pirata One";
     margin: 0;
-    display: flex;
+
 }
 button{
     font-family: "Pirata One";
     border-radius: 5%;
 }
-
+#mainDiv{
+    width: 100%;
+}
 #menuBar{
     margin: 0px;
     padding: 0px;

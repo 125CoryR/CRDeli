@@ -25,6 +25,14 @@ function Order(){
     if(document.getElementById("WholeWheat").checked){
         toppingChanges[toppingChanges.length] = "Whole Wheat Roll";
     }
+    if(document.getElementById("Toasted").checked){
+        toppingChanges[toppingChanges.length] = "Toasted";
+    }
+    if(document.getElementById("Not Toasted").checked){
+        toppingChanges[toppingChanges.length] = "Not Toasted";
+    }
+
+
     toppingChanges[1] = price;
 
     if(currentCart === null)
@@ -60,7 +68,7 @@ function UpdateCart(){
         div.style.width = "100%";
 
         var info = div.appendChild(document.createElement("div"));
-        info.style.width = "45%";
+        info.style.width = "60%";
 
         var sandwichName = info.appendChild(document.createElement("h4"));
         sandwichName.innerHTML = currentCart[i][0];
@@ -72,7 +80,7 @@ function UpdateCart(){
         {
             if (z !== 2)
             {
-                toppingsString = toppingsString + ",";
+                toppingsString = toppingsString + ", ";
             }
             toppingsString = toppingsString + currentCart[i][z];
         }
@@ -82,19 +90,39 @@ function UpdateCart(){
         toppings.style.margin = "0px";
         var price = div.appendChild(document.createElement("h4"));
         price.innerHTML = "$" + currentCart[i][1];
-        price.style.width = "15%";
+        price.style.width = "20%";
         price.style.margin = "0px";
         price.style.fontSize = "1.5vw" ;
         totalPrice += currentCart[i][1];
 
 
 
-        var editButton = div.appendChild(document.createElement("button"));
-        editButton.style.width = "20%";
         var deleteButton = div.appendChild(document.createElement("button"));
         deleteButton.style.width = "20%";
+        deleteButton.onclick = function(){DeleteItem(currentCart[i])};
+        deleteButton.addEventListener("click", function(){DeleteItem(currentCart[i])})
         parentDiv.appendChild(div);
     }
     document.getElementById("price").innerHTML = "Total: $" + (new Intl.NumberFormat().format(totalPrice));
 
+}
+function DeleteItem(toppingChanges){
+
+    currentCart.splice(currentCart.indexOf(toppingChanges),1);
+    Reload();
+    UpdateCart();
+
+}
+function DeleteAll(){
+
+  localStorage.clear();
+    Reload();
+    UpdateCart();
+
+}
+function checkOut(){
+    window.location.href = "../Cart";
+}
+function HomePage(){
+    window.location.href = "..";
 }

@@ -2,4 +2,140 @@ body{
     background-color: indigo;
     font-family: "Pirata One";
     margin: 0;
+    display: flex;
+}
+#menuBar{
+    margin: 0px;
+    padding: 0px;
+    min-height: 127px;
+    background-size: 500px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: max(100, 100);
+    background-image: url("../images/drippingBorder.png");
+}
+#cartDiv{
+    margin-left: 66.6%;
+    display: flex;
+    justify-content: end;
+}
+#cartButton{
+    border: none;
+    background: none;
+
+}
+.selectionDivClass{
+    display: flex;
+    justify-content: center;
+}
+#orderButton{
+    margin-top: 2vh;
+    font-size: 2.5vw;
+}
+#mainDiv{
+    margin-top: 200px;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+#itemDisplay{
+    margin-left: 2.5%;
+    width: 30%;
+}
+h1{
+    margin-top: 0px;
+    font-size: 5vw;
+    text-align: center;
+}
+#toppingsDiv{
+    width: 30%;
+    text-align: center;
+}
+.toppingsClass{
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    font-size: 3vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+label{
+    font-size: 2vw;
+}
+#cartDiv{
+
+
+
+    margin-left: 80%;
+    width: 20%;
+    height: 100vh;
+
+    position: fixed;
+    background-color: ivory;
+    border-radius: 2%;
+    padding-top:  100px;
+
+}
+#checkoutButtonsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+
+    border-top: 2px solid dimgrey;
+}
+#clearCartButton{
+    background-color: lightcoral;
+}
+.checkoutButtons{
+    margin-top: 5%;
+    font-size: 1.5vw;
+    border: none;
+
+    height: 6vh;
+}
+#itemAndCostDiv{
+    display: flex;
+    justify-content: space-around;
+    height:5vh;
+    font-size: 2vw;
+}
+#checkoutParent{
+    top: 85vh;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    background-color: lightgrey;
+}
+.itemsAndPrice{
+    margin-top: 0;
+    display: block;
+}
+button{
+    font-family: "Pirata One";
+    border-radius: 5%;
+}
+#itemsDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    top: 0%;
+    max-height: 85vh;
+
+}
+h4{
+    font-size: 1.5vw;
+    margin: 0px;
+}
+#homeButton{
+    max-font-size: 100px;
+    font-size: 5vh;
 }

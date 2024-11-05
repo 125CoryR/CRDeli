@@ -5,9 +5,113 @@
     <title>Spooky Sandwiches</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="Reload()">
+<div id = "menuBar" >
+    <button id = "homeButton" onclick="HomePage()">
+        Home
+    </button>
+</div>
 
+<div id = "mainDiv">
+    <div id = "itemDisplay">
+        <img src="../images/SpookyVeg.jpg" height="400" width="400"/>
+        <h1>Spooky Veg</h1>
+    </div>
+    <div id = "toppingsDiv">
+
+        <div id = "sizediv" class= "toppingClass">
+            <h2>Choose A Size</h2>
+            <div id = "sizeButtonDiv" class = "selectionDivClass">
+                <div>
+                    <input type="radio" name="size" id="Mini"
+                           value="Mini" checked>
+                    <label for="Mini"> Mini </label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="Regular"
+                           value="Regular" >
+                    <label for="Regular"> Regular </label>
+                </div>
+                <div>
+                    <input type="radio" name="size" id="Large"
+                           value="Large" >
+                    <label for="Large"> Large </label>
+                </div>
+            </div>
+        </div>
+        <div id = "toastedDiv" class= "toppingClass">
+            <h2>Toasted Or Not Toasted</h2>
+            <div id = "toastedButtonDiv" class = "selectionDivClass">
+                <div>
+                    <input type="radio" name="toasted" id="Toasted"
+                           value="Toasted" checked>
+                    <label for="Toasted"> Toasted </label>
+                </div>
+                <div>
+                    <input type="radio" name="toasted" id="Not Toasted"
+                           value="Not Toasted" >
+                    <label for="Not Toasted"> Not Toasted </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div id = "breadDiv" class= "toppingClass">
+            <h2>Choose your Bread</h2>
+            <div id = "breadButtonDiv" class = "selectionDivClass">
+                <div>
+                    <input type="radio" name="bread" id="White"
+                           value="White" checked>
+                    <label for="White"> White </label>
+                </div>
+                <div>
+                    <input type="radio" name="bread" id="Rye"
+                           value="Rye" >
+                    <label for="Rye"> Rye </label>
+                </div>
+                <div>
+                    <input type="radio" name="bread" id="WholeWheat"
+                           value="WholeWheat" >
+                    <label for="WholeWheat"> Whole Wheat </label>
+                </div>
+            </div>
+        </div>
+
+        <div id ="orderButtonDiv">
+            <button id = "orderButton" onclick = "Order()">Add to Order</button>
+        </div>
+    </div>
+
+</div>
+<div id = "cartDiv">
+    <div id = "itemsDiv">
+
+
+
+    </div>
+
+    <div id = "checkoutParent">
+        <div id = "itemAndCostDiv">
+            <p id="items" class="itemsAndPrice"> Items: 0</p>
+
+            <p id ="price" class="itemsAndPrice">Total: $0.00</p>
+        </div>
+        <div id = "checkoutButtonsDiv">
+
+            <button id= "clearCartButton" class = "checkoutButtons" onclick="DeleteAll()">Clear Cart</button>
+            <Button id="checkoutButton" class = "checkoutButtons" onclick="checkOut()"> Checkout </Button>
+
+
+        </div>
+    </div>
+
+
+
+</div>
 </body>
 </html>

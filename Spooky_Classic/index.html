@@ -12,7 +12,9 @@
 </head>
 <body onload="Reload()">
 <div id = "menuBar" >
-
+    <button id = "homeButton" onclick="HomePage()">
+        Home
+    </button>
 </div>
 
 <div id = "mainDiv">
@@ -21,9 +23,10 @@
             <h1>Spooky Classic</h1>
     </div>
     <div id = "toppingsDiv">
+
         <div id = "sizediv" class= "toppingClass">
             <h2>Choose A Size</h2>
-            <div id = "sizeButtonDiv">
+            <div id = "sizeButtonDiv" class = "selectionDivClass">
                 <div>
                     <input type="radio" name="size" id="Mini"
                            value="Mini" checked>
@@ -41,9 +44,26 @@
                 </div>
             </div>
          </div>
+        <div id = "toastedDiv" class= "toppingClass">
+            <h2>Toasted Or Not Toasted</h2>
+            <div id = "toastedButtonDiv" class = "selectionDivClass">
+                <div>
+                    <input type="radio" name="toasted" id="Toasted"
+                           value="Toasted" checked>
+                    <label for="Toasted"> Toasted </label>
+                </div>
+                <div>
+                    <input type="radio" name="toasted" id="Not Toasted"
+                           value="Not Toasted" >
+                    <label for="Not Toasted"> Not Toasted </label>
+                </div>
+
+            </div>
+        </div>
+
         <div id = "breadDiv" class= "toppingClass">
             <h2>Choose your Bread</h2>
-            <div id = "breadButtonDiv">
+            <div id = "breadButtonDiv" class = "selectionDivClass">
                 <div>
                     <input type="radio" name="bread" id="White"
                            value="White" checked>
@@ -83,8 +103,8 @@
         </div>
         <div id = "checkoutButtonsDiv">
 
-            <button id= "clearCartButton" class = "checkoutButtons">Clear Cart</button>
-            <Button id="checkoutButton" class = "checkoutButtons"> Checkout </Button>
+            <button id= "clearCartButton" class = "checkoutButtons" onclick="DeleteAll()">Clear Cart</button>
+            <Button id="checkoutButton" class = "checkoutButtons" onclick="checkOut()"> Checkout </Button>
 
 
         </div>
